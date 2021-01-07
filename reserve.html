@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đảo ngược mảng</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let x=[8,2,6,12,32,81,17];
+    document.write('mảng đầu tiên:' +x+ '<br>');
+    let first=0;
+    let last=x.length-1;
+    while (first<last){
+        let reserve=x[first];
+        x[first]= x[last];
+        x[last]=reserve;
+        first++;
+        last--;
+    }
+    document.write('mảng sau đảo ngược:'+ x);
+</script>

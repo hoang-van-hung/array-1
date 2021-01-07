@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giá trị lớn nhất trong mảng</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let array=[2,5,9,11,6,23,81,27];
+    document.write("Array: "+array+ "<br>");
+    let max=array[0];
+    let index=0;
+    for (let i=1;i<array.length;i++){
+        if (array[i]>max){
+            max=array[i];
+            index=i;
+        }
+    }
+    document.write("Max position: "+index+ "<br>");
+    document.write("Max in array: "+max);
+
+</script>
